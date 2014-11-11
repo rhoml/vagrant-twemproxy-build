@@ -7,6 +7,13 @@ servers = { "ubuntu_x86" => { "box"            => "ubuntu_x86",
                               "username"       => "ubuntu",
                               "architecture"   => "amd64",
                             },
+            "ubuntu_i386" => { "box"            => "ubuntu_i386",
+                               "ami"            => "ami-d93c7ee9",
+                               "distribution"   => "ubuntu",
+                               "package"        => "deb",
+                               "username"       => "ubuntu",
+                               "architecture"   => "i386",
+                            },
           }
 
 # Here's a quick breakdown on what the single letter objects mean.
