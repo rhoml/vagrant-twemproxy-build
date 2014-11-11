@@ -48,7 +48,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |v|
       b.vm.provision :shell, :inline => "echo \"export pc_token=#{ENV['PACKAGECLOUD_TOKEN']}\" >> /etc/profile.d/env_variables.sh"
       b.vm.provision :shell, :inline => "echo \"export pc_username=#{ENV['PACKAGECLOUD_USERNAME']}\" >> /etc/profile.d/env_variables.sh"
 
-      # Install necesary packages to compile Twemproxy and
+      # Install necessary packages to compile Twemproxy and
       #  Build packages and push them to package cloud.
       b.vm.provision :shell, :path => "scripts/bootstrap.sh"
 
